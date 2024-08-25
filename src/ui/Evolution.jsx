@@ -26,7 +26,7 @@ const Evolution = () => {
     
      async function askQuestion(question) {
 
-        const apiKey = "sk-proj-Q6eLHEGvZsAYMB4AF0mcT3BlbkFJg30S17rmZQFcgJpY7peS";
+        const apiKey = process.env.REACT_APP_OPENAI_API_KEY;
         try {
     
             const endpoint = 'https://api.openai.com/v1/chat/completions';
